@@ -47,10 +47,11 @@ jobs:
       #deploy to branch
       - run:
           name: Deploy to hosting
-          command:
+          command: |
             if [ "${CIRCLE_BRANCH}" == "dev" ]; then
               ./node_modules/.bin/firebase deploy -P dev --token "1/OfzKL5MjKjSl7K8qzUV2GAAFonu1H8MJ7ZNHNs1GlC4"
             fi
+            
             # elif [[ "${CIRCLE_BRANCH}" == "test" ]]; then
             #   ./node_modules/.bin/firebase deploy -P test --token "1/OfzKL5MjKjSl7K8qzUV2GAAFonu1H8MJ7ZNHNs1GlC4"
             # elif [[ "${CIRCLE_BRANCH}" == "master" ]]; then
