@@ -38,5 +38,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
-      # - run: npm ng build --prod
-      # - run: npm ng test --watch=false
+      - run: npm ng build --prod
+      - run: npm ng test --watch=false
