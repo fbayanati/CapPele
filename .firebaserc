@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "cappele-f900f"
+    "dev": "cappele-dev",
+    "test": "cappele-test",
+    "prod": "cappele-prod"
   }
 }
