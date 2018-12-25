@@ -40,6 +40,8 @@ jobs:
       # run tests!
       - run: npm run buildprod
 
+      - run: ls
+
       #deploy to branch
       - run:
           name: Deploy to hosting
