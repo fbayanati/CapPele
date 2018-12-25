@@ -42,7 +42,7 @@ jobs:
 
       - run: ls
 
-      - run: ls dist
+      - run: ls dist/CapPele
 
       #deploy to branch
       - run:
