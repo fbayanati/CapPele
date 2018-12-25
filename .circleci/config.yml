@@ -43,7 +43,7 @@ jobs:
       #deploy to branch
       - run:
           name: Deploy to hosting
-          command: ./node_modules/.bin/firebase deploy -P dev --token "$FIREBASE_TOKEN"
+          command: ./node_modules/.bin/firebase deploy -P dev --token "1/OfzKL5MjKjSl7K8qzUV2GAAFonu1H8MJ7ZNHNs1GlC4"
             # if [ "${CIRCLE_BRANCH}" === "dev" ]; then
             #   ./node_modules/.bin/firebase deploy -P dev --only hosting
             # else [ "${CIRCLE_BRANCH}" === "test" ]; then
