@@ -41,13 +41,13 @@ jobs:
       - run: npm run buildprod
 
       #deploy to branch
-      # -run:
-      #     name: Deploy to hosting
-      #     command: |
-      #       if [ "${CIRCLE_BRANCH}" === "dev" ]; then
-      #         ./node_modules/.bin/firebase deploy -P dev --only hosting
-      #       else [ "${CIRCLE_BRANCH}" === "test" ]; then
-      #         ./node_modules/.bin/firebase deploy -P test --only hosting
-      #       else [ "${CIRCLE_BRANCH}" === "master" ]; then
-      #         ./node_modules/.bin/firebase deploy -P prod --only hosting
-      #       fi
+      -run:
+          name: Deploy to hosting
+          command: ./node_modules/.bin/firebase deploy -P dev --only hosting
+            # if [ "${CIRCLE_BRANCH}" === "dev" ]; then
+            #   ./node_modules/.bin/firebase deploy -P dev --only hosting
+            # else [ "${CIRCLE_BRANCH}" === "test" ]; then
+            #   ./node_modules/.bin/firebase deploy -P test --only hosting
+            # else [ "${CIRCLE_BRANCH}" === "master" ]; then
+            #   ./node_modules/.bin/firebase deploy -P prod --only hosting
+            # fi
